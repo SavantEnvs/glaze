@@ -1,0 +1,6 @@
+project: savantenvs/glaze
+target: json_minify
+cmds:
+  - cmd: /mayhem/json_minify
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/json.dict

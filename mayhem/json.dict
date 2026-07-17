@@ -1,0 +1,62 @@
+# JSON dictionary for the glaze fuzz harnesses (read_json / read_jsonc / generic / jmespath /
+# minify / prettify). OSS-Fuzz shipped no .dict for glaze, so this is crafted: JSON structural
+# tokens + literals + number/escape edge fragments + the field keys used by the reflection harness
+# structs (my_struct: i/d/hello/arr; nested+map keys). Shared by every JSON-family Mayhemfile.
+
+# structural tokens
+"{"
+"}"
+"["
+"]"
+":"
+","
+"\""
+
+# literals / keywords
+"true"
+"false"
+"null"
+"nan"
+"inf"
+"-inf"
+
+# number edges
+"0"
+"-0"
+"1e308"
+"1e-308"
+"0.0"
+"3.14"
+"1E10"
+"123456789012345678901234567890"
+
+# string escapes
+"\\\""
+"\\\\"
+"\\n"
+"\\t"
+"\\u0000"
+"\\u00ff"
+"\\uD834\\uDD1E"
+
+# field keys exercised by the reflection harnesses (my_struct + nested/map)
+"\"i\""
+"\"d\""
+"\"hello\""
+"\"arr\""
+"\"n\""
+"\"label\""
+"\"data\""
+"\"dict\""
+"\"kids\""
+"\"maybe\""
+"\"alt\""
+"\"one\""
+"\"two\""
+
+# whole tiny documents
+"{}"
+"[]"
+"\"\""
+"{\"i\":287}"
+"[1,2,3]"

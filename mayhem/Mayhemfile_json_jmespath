@@ -1,0 +1,6 @@
+project: savantenvs/glaze
+target: json_jmespath
+cmds:
+  - cmd: /mayhem/json_jmespath
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/json.dict

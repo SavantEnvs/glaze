@@ -1,0 +1,6 @@
+project: savantenvs/glaze
+target: json_generic
+cmds:
+  - cmd: /mayhem/json_generic
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/json.dict

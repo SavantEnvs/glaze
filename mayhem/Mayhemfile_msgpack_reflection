@@ -1,0 +1,5 @@
+project: savantenvs/glaze
+target: msgpack_reflection
+cmds:
+  - cmd: /mayhem/msgpack_reflection
+    libfuzzer: true
