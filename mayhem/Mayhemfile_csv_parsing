@@ -1,0 +1,5 @@
+project: savantenvs/glaze
+target: csv_parsing
+cmds:
+  - cmd: /mayhem/csv_parsing
+    libfuzzer: true

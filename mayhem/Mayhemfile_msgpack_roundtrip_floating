@@ -1,0 +1,5 @@
+project: savantenvs/glaze
+target: msgpack_roundtrip_floating
+cmds:
+  - cmd: /mayhem/msgpack_roundtrip_floating
+    libfuzzer: true

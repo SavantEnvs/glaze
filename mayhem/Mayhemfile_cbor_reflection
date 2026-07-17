@@ -1,0 +1,5 @@
+project: savantenvs/glaze
+target: cbor_reflection
+cmds:
+  - cmd: /mayhem/cbor_reflection
+    libfuzzer: true

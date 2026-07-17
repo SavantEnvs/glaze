@@ -1,0 +1,6 @@
+project: savantenvs/glaze
+target: json_with_comments
+cmds:
+  - cmd: /mayhem/json_with_comments
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/json.dict

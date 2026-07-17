@@ -1,0 +1,6 @@
+project: savantenvs/glaze
+target: json_roundtrip_floating
+cmds:
+  - cmd: /mayhem/json_roundtrip_floating
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/json.dict

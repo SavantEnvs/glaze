@@ -1,0 +1,5 @@
+project: savantenvs/glaze
+target: cbor_roundtrip_string
+cmds:
+  - cmd: /mayhem/cbor_roundtrip_string
+    libfuzzer: true

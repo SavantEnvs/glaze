@@ -1,0 +1,5 @@
+project: savantenvs/glaze
+target: binary_reflection
+cmds:
+  - cmd: /mayhem/binary_reflection
+    libfuzzer: true
