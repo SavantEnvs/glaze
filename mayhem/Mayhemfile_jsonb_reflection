@@ -1,0 +1,6 @@
+project: savantenvs/glaze
+target: jsonb-reflection-buggy-mhh-run-5
+# origin: https://app.mayhem.security/mayhemheroes/glaze/jsonb-reflection/5
+cmds:
+  - cmd: /mayhem/jsonb_reflection
+    libfuzzer: true
