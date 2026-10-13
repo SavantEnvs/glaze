@@ -1,0 +1,6 @@
+# seed-from: https://app.mayhem.security/savantenvs/glaze/msgpack-reflection
+project: savantenvs/glaze
+target: msgpack_reflection-mined-426dbbe
+cmds:
+  - cmd: /mayhem/msgpack_reflection
+    libfuzzer: true
