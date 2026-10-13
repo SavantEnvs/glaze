@@ -1,0 +1,6 @@
+# seed-from: https://app.mayhem.security/savantenvs/glaze/binary-reflection
+project: savantenvs/glaze
+target: binary_reflection-mined-426dbbe
+cmds:
+  - cmd: /mayhem/binary_reflection
+    libfuzzer: true
