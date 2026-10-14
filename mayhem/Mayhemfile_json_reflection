@@ -1,0 +1,7 @@
+# seed-from: https://app.mayhem.security/savantenvs/glaze/json-reflection
+project: savantenvs/glaze
+target: json_reflection-mined-50f812e
+cmds:
+  - cmd: /mayhem/json_reflection
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/json.dict
